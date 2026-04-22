@@ -347,7 +347,11 @@ em { font-style: italic; color: var(--ink-2); }
   white-space: nowrap;
   font-family: var(--font-display);
   font-size: 1.1rem;
-  animation: marquee 40s linear infinite;
+  animation: marquee 22s linear infinite;
+  will-change: transform;
+}
+@media (max-width: 700px) {
+  .marquee__track { animation-duration: 16s; }
 }
 .marquee__track span { padding-right: 40px; color: var(--cream); }
 .marquee__track span:nth-child(odd) { color: var(--yellow); }
