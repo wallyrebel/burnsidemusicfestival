@@ -344,13 +344,14 @@ em { font-style: italic; color: var(--ink-2); }
   position: relative;
 }
 .marquee__track {
-  display: flex; gap: 40px;
+  display: flex;
   white-space: nowrap;
   font-family: var(--font-display);
   font-size: 1.1rem;
   animation: marquee 11s linear infinite;
   will-change: transform;
 }
+.marquee__track span { flex: 0 0 auto; }
 @media (max-width: 700px) {
   .marquee__track { animation-duration: 8s; }
 }
