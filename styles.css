@@ -348,12 +348,14 @@ em { font-style: italic; color: var(--ink-2); }
   white-space: nowrap;
   font-family: var(--font-display);
   font-size: 1.1rem;
-  animation: marquee 11s linear infinite;
+  animation: marquee 18s linear infinite;
   will-change: transform;
 }
 .marquee__track span { flex: 0 0 auto; }
 @media (max-width: 700px) {
-  .marquee__track { animation-duration: 8s; }
+  /* Mobile shows 1-2 items at a time, so each item needs more seconds
+     on screen to be readable before the loop comes back around. */
+  .marquee__track { animation-duration: 26s; }
 }
 .marquee__track span { padding-right: 40px; color: var(--cream); }
 .marquee__track span:nth-child(odd) { color: var(--yellow); }
