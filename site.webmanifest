@@ -1,0 +1,12 @@
+{
+  "name": "Burnside Music Festival",
+  "short_name": "Burnside Fest",
+  "description": "Annual Hill Country blues festival in Ripley, Mississippi. June 6, 2026.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf3e1",
+  "theme_color": "#0f1f22",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
