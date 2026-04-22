@@ -1,6 +1,41 @@
 // Burnside Music Fest — minimal enhancements
 
 (function () {
+  // Fast in-page smooth scroll (replaces CSS scroll-behavior: smooth,
+  // which picks a long duration for long jumps and feels sluggish).
+  const prefersReduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const DURATION = 350; // ms
+  const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+
+  function scrollToY(targetY) {
+    if (prefersReduce) { window.scrollTo(0, targetY); return; }
+    const startY = window.pageYOffset;
+    const diff = targetY - startY;
+    if (!diff) return;
+    const start = performance.now();
+    const step = (now) => {
+      const t = Math.min(1, (now - start) / DURATION);
+      window.scrollTo(0, startY + diff * easeOutCubic(t));
+      if (t < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+
+  const navH = () => (document.querySelector('.nav')?.offsetHeight || 0) - 1;
+
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    const id = a.getAttribute('href');
+    if (id.length < 2) return;
+    const el = document.querySelector(id);
+    if (!el) return;
+    e.preventDefault();
+    const y = el.getBoundingClientRect().top + window.pageYOffset - navH();
+    scrollToY(y);
+    history.replaceState(null, '', id);
+  });
+
   // Year stamp
   const y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
