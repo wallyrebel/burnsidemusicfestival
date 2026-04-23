@@ -1,4 +1,18 @@
 User-agent: *
 Allow: /
+Disallow: /make_og.py
+
+# Major search engines — explicit allow for good measure
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
 
 Sitemap: https://burnsidemusicfest.com/sitemap.xml

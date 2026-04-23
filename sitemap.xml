@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://burnsidemusicfest.com/</loc>
-    <lastmod>2026-04-22</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://burnsidemusicfest.com/#lineup</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://burnsidemusicfest.com/#festival</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://burnsidemusicfest.com/#visit</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://burnsidemusicfest.com/#stay</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://burnsidemusicfest.com/#faq</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://burnsidemusicfest.com/og-burnside-fest-2026.jpg</image:loc>
+      <image:title>Burnside Music Fest 2026 — June 6 in Ripley, Mississippi</image:title>
+      <image:caption>Free Hill Country blues festival celebrating R.L. Burnside's 100th birthday in historic downtown Ripley, MS.</image:caption>
+    </image:image>
   </url>
 </urlset>
