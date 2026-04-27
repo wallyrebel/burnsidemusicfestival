@@ -773,6 +773,96 @@ em { font-style: italic; color: var(--ink-2); }
 }
 .press__link:hover .press__cta { color: var(--ink); }
 
+/* ============ PARTNERS ============ */
+.partners { padding: clamp(50px, 7vw, 90px) 0; background: var(--paper); border-top: 1px solid rgba(15,31,34,.08); }
+.partners__grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+.partner { display: flex; }
+.partner__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  width: 100%;
+  min-height: 240px;
+  padding: 28px 26px 24px;
+  border-radius: 14px;
+  text-decoration: none;
+  border: 3px solid var(--ink);
+  position: relative;
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.partner__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(255,255,255,.18), transparent 55%);
+  pointer-events: none;
+}
+.partner__link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(15,31,34,.18);
+}
+.partner__eyebrow {
+  font-family: var(--font-mono);
+  font-size: .72rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  margin: 0;
+  opacity: .85;
+}
+.partner__headline {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: clamp(1.25rem, 1rem + .8vw, 1.6rem);
+  line-height: 1.2;
+  margin: 0;
+}
+.partner__services {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.partner__services li {
+  font-family: var(--font-mono);
+  font-size: .7rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.18);
+  border: 1px solid rgba(255,255,255,.25);
+}
+.partner__cta {
+  font-family: var(--font-mono);
+  font-size: .78rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  align-self: flex-start;
+  padding-top: 4px;
+  border-top: 1px solid rgba(255,255,255,.3);
+  width: 100%;
+}
+
+.partner--news .partner__link   { background: var(--ink);  color: var(--paper); }
+.partner--news .partner__eyebrow{ color: var(--yellow); }
+
+.partner--sports .partner__link    { background: var(--rust); color: var(--paper); }
+.partner--sports .partner__eyebrow { color: #ffeab1; }
+
+.partner--mgm .partner__link    { background: var(--teal); color: var(--paper); }
+.partner--mgm .partner__eyebrow { color: var(--yellow); }
+
 /* ============ CTA BANNER ============ */
 .cta-banner {
   background: var(--rust);
