@@ -587,6 +587,43 @@ em { font-style: italic; color: var(--ink-2); }
 @media (max-width: 900px) { .festival__grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .festival__grid { grid-template-columns: 1fr; } }
 
+/* ============ VENDORS ============ */
+.vendors { padding: clamp(60px, 8vw, 120px) 0; background: var(--teal-dp); color: var(--cream); text-align: center; }
+.vendors__inner { max-width: 780px; margin: 0 auto; }
+.vendors .eyebrow { color: var(--yellow); }
+.vendors h2 { margin-bottom: 20px; color: var(--cream); }
+.vendors .lead { color: rgba(243,228,195,.9); margin-bottom: 30px; }
+.vendors__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  max-width: fit-content;
+  font-size: 1.1rem;
+}
+.vendors__list li {
+  background: rgba(15,31,34,.35);
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(243,228,195,.12);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.vendors__list li span { font-size: 1.4rem; }
+.vendors p { color: rgba(243,228,195,.9); }
+.vendors__cta { margin-top: 34px; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+.vendors__cta .btn--ghost { color: var(--cream); border-color: rgba(243,228,195,.4); }
+.vendors__cta .btn--ghost:hover { background: var(--cream); color: var(--ink); border-color: var(--cream); }
+
+@media (max-width: 600px) {
+  .vendors__list { width: 100%; max-width: 100%; }
+  .vendors__list li { font-size: 1rem; padding: 12px 16px; }
+}
+
 /* ============ VISIT ============ */
 .visit { padding: clamp(60px, 8vw, 120px) 0; background: #f6ecd1; border-top: 1px solid rgba(15,31,34,.06); border-bottom: 1px solid rgba(15,31,34,.06); }
 .visit__grid {
