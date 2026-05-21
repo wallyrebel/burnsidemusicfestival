@@ -158,13 +158,13 @@ d.rectangle((lx, ly, lx + 360, ly + 150), fill=INK)
 d.text((lx + 22, ly + 16), "HISTORIC DOWNTOWN", font=ImageFont.truetype(f"{FONTS}/arialbd.ttf", 18), fill=YELLOW)
 d.text((lx + 22, ly + 40), "RIPLEY, MS", font=ImageFont.truetype(f"{FONTS}/impact.ttf", 54), fill=CREAM)
 d.text((lx + 22, ly + 100), "HILL COUNTRY BLUES ALLEY", font=ImageFont.truetype(f"{FONTS}/arialbd.ttf", 18), fill=TEAL)
-d.text((lx + 22, ly + 124), "FREE ENTRY  ·  ALL AGES  ·  MUSIC FROM NOON", font=ImageFont.truetype(f"{FONTS}/arialbd.ttf", 14), fill=CREAM)
+d.text((lx + 22, ly + 124), "FREE ENTRY  ·  ALL AGES  ·  MUSIC FROM 2:00 PM", font=ImageFont.truetype(f"{FONTS}/arialbd.ttf", 14), fill=CREAM)
 
 # ---------- Lineup ribbon (bottom) ----------
 rh = 50
 d.rectangle((0, H - rh, W, H), fill=INK)
 d.rectangle((0, H - rh - 4, W, H - rh), fill=TEAL)
-lineup = "CEDRIC BURNSIDE  ·  GARRY BURNSIDE  ·  PISTOL & THE QUEEN  ·  LENA BEACH feat. BOO MITCHELL  ·  MULE MAN MASSEY  ·  PIP PROJECT  ·  TITUS GILLARD"
+lineup = "CEDRIC BURNSIDE  ·  GARRY BURNSIDE  ·  PISTOL & THE QUEEN  ·  LENA BEACH & BOO MITCHELL  ·  KODY SHADE HARRELL  ·  PIP PROJECT  ·  TITUS GILLARD  ·  JAM SESSION"
 # auto-fit font size so it never overflows
 fs = 22
 while fs > 10:
