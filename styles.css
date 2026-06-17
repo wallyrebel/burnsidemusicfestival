@@ -374,8 +374,8 @@ em { font-style: italic; color: var(--ink-2); }
   background: radial-gradient(1000px 500px at 50% -10%, #133e42 0%, var(--ink) 55%, #0b1a1d 100%), var(--ink);
   color: var(--cream);
 }
-.watch__inner { max-width: 920px; margin: 0 auto; text-align: center; }
-.watch__head { margin-bottom: 38px; }
+.watch__inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+.watch__head { max-width: 760px; margin: 0 auto 38px; }
 .watch .eyebrow { color: var(--yellow); }
 .watch h2 { color: var(--cream); margin-bottom: 18px; }
 .watch .lead { color: rgba(243,228,195,.88); max-width: 720px; margin-inline: auto; }
